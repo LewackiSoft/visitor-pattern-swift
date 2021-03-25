@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		696C101B16FADBE669B112AA /* ArrayOfAdditiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C163DE56171E0F61281D5 /* ArrayOfAdditiveExtension.swift */; };
+		696C112EF25086CDFBB3CC88 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C140B7CB6782893DECCAB /* Company.swift */; };
 		696C120183385647A9DF685A /* WeirdDepartmentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C1540EDDBE228DAFA9D90 /* WeirdDepartmentProtocol.swift */; };
 		696C14573151BA74C26D9A9D /* DepartmentProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C1CDA35DBF2D35AC909A8 /* DepartmentProtocol.swift */; };
-		696C1477048363A1C941733A /* DepartmentSearchVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C1A0A02206C43A25A578B /* DepartmentSearchVisitor.swift */; };
+		696C1477048363A1C941733A /* DepartmentFilterVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C1A0A02206C43A25A578B /* DepartmentFilterVisitor.swift */; };
 		696C149B8ECEAFC2B91AAAEE /* DepartmentVisitorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C1519CE6155CD06C5BA0B /* DepartmentVisitorProtocol.swift */; };
 		696C183B059160544CB4D000 /* TreePrintingVisitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C1CC48335F84D50F58FD4 /* TreePrintingVisitor.swift */; };
 		696C1A00441A83F37BECC31E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696C142AF8EF5E523B0815F2 /* main.swift */; };
@@ -33,12 +34,13 @@
 
 /* Begin PBXFileReference section */
 		696C119D0CC30FF8D10CF10F /* WeirdDepartment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeirdDepartment.swift; sourceTree = "<group>"; };
+		696C140B7CB6782893DECCAB /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		696C142AF8EF5E523B0815F2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		696C1519CE6155CD06C5BA0B /* DepartmentVisitorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentVisitorProtocol.swift; sourceTree = "<group>"; };
 		696C1540EDDBE228DAFA9D90 /* WeirdDepartmentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeirdDepartmentProtocol.swift; sourceTree = "<group>"; };
 		696C154DC87DD9CC709B7772 /* Department.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Department.swift; sourceTree = "<group>"; };
 		696C163DE56171E0F61281D5 /* ArrayOfAdditiveExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayOfAdditiveExtension.swift; sourceTree = "<group>"; };
-		696C1A0A02206C43A25A578B /* DepartmentSearchVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentSearchVisitor.swift; sourceTree = "<group>"; };
+		696C1A0A02206C43A25A578B /* DepartmentFilterVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentFilterVisitor.swift; sourceTree = "<group>"; };
 		696C1ABCA44A287A068D5C21 /* VisitorPattern */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VisitorPattern; sourceTree = BUILT_PRODUCTS_DIR; };
 		696C1CC48335F84D50F58FD4 /* TreePrintingVisitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreePrintingVisitor.swift; sourceTree = "<group>"; };
 		696C1CDA35DBF2D35AC909A8 /* DepartmentProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepartmentProtocol.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				696C154DC87DD9CC709B7772 /* Department.swift */,
 				696C119D0CC30FF8D10CF10F /* WeirdDepartment.swift */,
+				696C140B7CB6782893DECCAB /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,7 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				696C1E5C8CC57248BBB88D63 /* CostCountingVisitor.swift */,
-				696C1A0A02206C43A25A578B /* DepartmentSearchVisitor.swift */,
+				696C1A0A02206C43A25A578B /* DepartmentFilterVisitor.swift */,
 				696C1CC48335F84D50F58FD4 /* TreePrintingVisitor.swift */,
 			);
 			path = Visitors;
@@ -179,8 +182,9 @@
 				696C1F694BD306A11A11205D /* Department.swift in Sources */,
 				696C1FE7C2BA9870DAA8EEF1 /* WeirdDepartment.swift in Sources */,
 				696C1D917EB0DE8D061BEBC1 /* CostCountingVisitor.swift in Sources */,
-				696C1477048363A1C941733A /* DepartmentSearchVisitor.swift in Sources */,
+				696C1477048363A1C941733A /* DepartmentFilterVisitor.swift in Sources */,
 				696C183B059160544CB4D000 /* TreePrintingVisitor.swift in Sources */,
+				696C112EF25086CDFBB3CC88 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
