@@ -6,7 +6,7 @@
 import Foundation
 
 
-let d = Department(
+let company = Department(
         "Main",
         ownCost: 10,
         subDepartments: [
@@ -17,8 +17,14 @@ let d = Department(
             ])
         ])
 
-let itCosts = d
+let itCosts = company
         .accept(visitor: DepartmentSearchVisitor(searchId: "IT"))?
         .accept(visitor: CostCountingVisitor()) ?? 0
 
-print(itCosts)
+
+company.accept(visitor: TreePrintingVisitor(indent: 2))
+
+print("\n===================\n")
+
+print("IT Costs:", itCosts)
+print("Total Costs:", company.accept(visitor: CostCountingVisitor()))
