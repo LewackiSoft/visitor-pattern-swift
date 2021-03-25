@@ -6,14 +6,8 @@
 import Foundation
 
 
-class Department: DepartmentProtocol {
+struct Department: DepartmentProtocol {
     let id: String
     let ownCost: Float
-    let subDepartments: [DepartmentProtocol]?
-
-    init(_ id: String, ownCost: Float, subDepartments: [DepartmentProtocol]? = nil) {
-        self.id = id
-        self.ownCost = ownCost
-        self.subDepartments = subDepartments
-    }
+    private(set) var subDepartments: [DepartmentProtocol]? = nil
 }

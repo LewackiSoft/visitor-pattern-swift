@@ -7,13 +7,13 @@ import Foundation
 
 
 let company = Department(
-        "Main",
+        id: "Main",
         ownCost: 10,
         subDepartments: [
-            Department("Low Cost", ownCost: 20),
-            WeirdDepartment("IT", ownCost: 20, weirdness: 1.5, subDepartments: [
-                Department("QA", ownCost: 100),
-                Department("Dev", ownCost: 200),
+            Department(id: "Low Cost", ownCost: 20),
+            WeirdDepartment(id: "IT", ownCost: 20, weirdness: 1.5, subDepartments: [
+                Department(id: "QA", ownCost: 100),
+                Department(id: "Dev", ownCost: 200),
             ])
         ])
 
