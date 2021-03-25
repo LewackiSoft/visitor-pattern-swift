@@ -5,9 +5,10 @@
 
 import Foundation
 
+
 extension Array where Array.Element: AdditiveArithmetic {
     func sum() -> Array.Element {
-        return self.reduce(Array.Element.zero) {
+        self.reduce(Array.Element.zero) {
             $0 + $1
         }
     }

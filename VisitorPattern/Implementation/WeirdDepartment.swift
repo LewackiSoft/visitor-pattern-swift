@@ -5,6 +5,7 @@
 
 import Foundation
 
+
 class WeirdDepartment: WeirdDepartmentProtocol {
     let id: String
     let weirdness: Float

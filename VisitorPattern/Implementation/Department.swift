@@ -5,6 +5,7 @@
 
 import Foundation
 
+
 class Department: DepartmentProtocol {
     let id: String
     let ownCost: Float

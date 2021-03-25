@@ -11,4 +11,3 @@ protocol DepartmentVisitorProtocol {
     func visit(department: DepartmentProtocol) -> ValueType
     func visit(weirdDepartment: WeirdDepartmentProtocol) -> ValueType
 }
-

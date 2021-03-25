@@ -5,6 +5,7 @@
 
 import Foundation
 
+
 class CostCountingVisitor: DepartmentVisitorProtocol {
     typealias ValueType = Float
 

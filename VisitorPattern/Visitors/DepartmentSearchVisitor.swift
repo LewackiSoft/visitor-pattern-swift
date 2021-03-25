@@ -14,6 +14,7 @@ class DepartmentSearchVisitor {
     }
 }
 
+
 extension DepartmentSearchVisitor: DepartmentVisitorProtocol {
     typealias ValueType = DepartmentProtocol?
 
@@ -39,6 +40,4 @@ extension DepartmentSearchVisitor: DepartmentVisitorProtocol {
     func visit(weirdDepartment: WeirdDepartmentProtocol) -> DepartmentProtocol? {
         visit(department: weirdDepartment)
     }
-
-
 }
