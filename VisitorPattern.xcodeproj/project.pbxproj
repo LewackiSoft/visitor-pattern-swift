@@ -78,19 +78,19 @@
 				696C142AF8EF5E523B0815F2 /* main.swift */,
 				696C1DBBF8F0BC2C5DA9E46B /* Protocols */,
 				696C16D4717339AB2E5FE863 /* Extensions */,
-				696C18A7A9E30B2AFF6C6076 /* Implementation */,
+				696C18A7A9E30B2AFF6C6076 /* Models */,
 				696C1A044A31F5AFA3F6D70F /* Visitors */,
 			);
 			path = VisitorPattern;
 			sourceTree = "<group>";
 		};
-		696C18A7A9E30B2AFF6C6076 /* Implementation */ = {
+		696C18A7A9E30B2AFF6C6076 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				696C154DC87DD9CC709B7772 /* Department.swift */,
 				696C119D0CC30FF8D10CF10F /* WeirdDepartment.swift */,
 			);
-			path = Implementation;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		696C1A044A31F5AFA3F6D70F /* Visitors */ = {
