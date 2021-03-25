@@ -22,7 +22,9 @@ company.accept(visitor: TreePrintingVisitor(indent: 2))
 print("\n===================\n")
 
 let itCosts = company
-        .accept(visitor: DepartmentSearchVisitor(searchId: "IT"))?
+        .accept(visitor: DepartmentSearchVisitor {
+            $0.id == "IT"
+        })?
         .accept(visitor: CostCountingVisitor()) ?? 0
 
 print("IT Costs:", itCosts)

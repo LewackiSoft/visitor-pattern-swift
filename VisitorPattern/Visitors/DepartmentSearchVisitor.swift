@@ -7,17 +7,17 @@ import Foundation
 
 
 class DepartmentSearchVisitor {
-    private let searchId: String
+    private let predicate: (DepartmentProtocol) -> Bool
 
-    init(searchId: String) {
-        self.searchId = searchId
+    init(predicate: @escaping (DepartmentProtocol) -> Bool) {
+        self.predicate = predicate
     }
 }
 
 
 extension DepartmentSearchVisitor: DepartmentVisitorProtocol {
     func visit(department: DepartmentProtocol) -> DepartmentProtocol? {
-        if department.id == searchId {
+        if self.predicate(department) {
             return department;
         }
 
