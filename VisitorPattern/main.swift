@@ -17,14 +17,13 @@ let company = Department(
             ])
         ])
 
-let itCosts = company
-        .accept(visitor: DepartmentSearchVisitor(searchId: "IT"))?
-        .accept(visitor: CostCountingVisitor()) ?? 0
-
-
 company.accept(visitor: TreePrintingVisitor(indent: 2))
 
 print("\n===================\n")
+
+let itCosts = company
+        .accept(visitor: DepartmentSearchVisitor(searchId: "IT"))?
+        .accept(visitor: CostCountingVisitor()) ?? 0
 
 print("IT Costs:", itCosts)
 print("Total Costs:", company.accept(visitor: CostCountingVisitor()))
