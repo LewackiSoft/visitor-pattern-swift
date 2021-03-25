@@ -7,8 +7,6 @@ import Foundation
 
 
 class CostCountingVisitor: DepartmentVisitorProtocol {
-    typealias ValueType = Float
-
     func visit(department: DepartmentProtocol) -> Float {
         let subTotal = department
                 .subDepartments?

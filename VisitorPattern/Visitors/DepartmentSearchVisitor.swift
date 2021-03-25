@@ -16,8 +16,6 @@ class DepartmentSearchVisitor {
 
 
 extension DepartmentSearchVisitor: DepartmentVisitorProtocol {
-    typealias ValueType = DepartmentProtocol?
-
     func visit(department: DepartmentProtocol) -> DepartmentProtocol? {
         if department.id == searchId {
             return department;

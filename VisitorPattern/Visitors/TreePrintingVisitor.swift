@@ -15,8 +15,6 @@ class TreePrintingVisitor {
 }
 
 extension TreePrintingVisitor: DepartmentVisitorProtocol {
-    typealias ValueType = Void
-
     func visit(department: DepartmentProtocol) -> Void {
         innerVisit(department: department, extraInfo: "\(department.ownCost)")
     }
